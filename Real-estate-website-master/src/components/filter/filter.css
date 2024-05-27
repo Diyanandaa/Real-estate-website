@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header h1 {
+    color: #378CE7;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.search-bar {
+    text-align: center;
+    margin: 40px;
+}
+.search-bar input {
+    width: 20%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    background-color: #378CE7;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.search-bar select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+/* Style the options within the select */
+.search-bar select option {
+    background-color: #fff;
+    color: #023047;
+}
+.search-bar button:hover {
+    background-color: #378CE7;
+}
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+}
+.job-listing {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 20px 20px 60px #00000041, inset -20px -20px 60px #ffffff40;
+    transition: transform 0.3s ease;
+    background-color: black;
+}
+.job-listing:hover {
+    transform: scale(1.02);
+}
+.job-listing h3 {
+    color: #023047;
+    margin-top: 0;
+}
+.job-listing button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #378CE7;
+    color: white;
+    border: black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 400ms    ease;
+}
+.job-listing button:hover {
+    background-color: #001d32;
+}
+.job {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-left: 50px;
+    /* height: 400px; */
+    padding: 50px ;
+    /* margin: 0px; */
+    position: relative;
+    /* transition: all 400ms ease; */
+}
+.job:hover {
+    transform: scale(1.02); /* Scale up on hover */
+}
+.job h3 {
+    color: #498df3;
+    margin-top: 0;
+    font-size: 25px;
+    margin-left: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */  
+}
+.job p {
+    color: #0e0d0d;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.job button {
+    /* display: block; */
+    width: 100%; /* Make the button full width */
+    /* margin-top: 10px; */
+    padding: 8px 16px;
+    background-color: white;
+    color: #1273a4;
+    position:  absolute;
+    bottom: 14px;
+    left: 34%;
+    width: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.job button:hover {
+    background-color: #1365cf; /* Darken the background on hover */
+    color: white;
+}
+/* Add custom styling for the green tick icon */
+.icon-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.icon-container img {
+    width: 100px;
+    height: 100px;
+}
+/* Rest of your CSS styles */
+/* Add custom styling for the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(84, 133, 240, 0.4); /* Black background with opacity */
+}
+.modal-content {
+    background-color: #f5f6f0;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px ;
+    
+    border: 1px solid #888;
+    width: 30%; /* 80% width */
+    border-radius: 10px;
+    position: relative;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

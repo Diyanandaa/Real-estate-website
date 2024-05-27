@@ -1,0 +1,78 @@
+.boxxx{
+    border:1px solid black;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px ;
+    color:black;
+}
+.signup{
+    text-align: center;
+}
+input{
+    padding: 20px;
+    border: 2px solid black;
+    width: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 20px auto;
+    /* margin: auto; */
+    padding: 30px;
+    font-family: sans-serif;
+    background-color: white;
+    /* background-color: white; */
+}
+.abc{
+    border: 2px solid black;
+}
+p{
+    text-align: center;
+    color: gray;
+}
+#create{
+    color: gray;
+    padding-top: 20px;
+    font-size: 8px;
+}   
+.color{
+    color:white;
+}
+button{
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 12px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 18px;
+    background-color: #378CE7;
+    cursor: pointer;
+}
+#togglePassword{
+    cursor: pointer;
+}
+#comment{
+    text-align: center;
+    color: gray;
+    margin-top: -6px;
+    margin-bottom: -10px;
+}
+hr{
+    width: 100%;
+}
+#href{
+    color: gray;
+}
+#signIn:hover{
+    background-color: #4b5666;
+    color: white;
+}
+button:hover{
+    background-color: #4b5666;
+}
+#href:hover{
+    color: white;
+}
